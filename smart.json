@@ -1,5 +1,5 @@
 {
-  "name": "egaragiste-notifications",
+  "name": "meteor-bootstrap-growl",
   "description": "Provides growl notifications through a NotificationHelper utility class on client",
   "homepage": "",
   "author": "Gildas Garcia <gildas.garcia@gmail.com>",

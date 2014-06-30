@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "[egaragiste] Notifications de l'application suite aux actions de l'utilisateur"
+  summary: "Provides growl notifications through a NotificationHelper utility class on client"
 });
 
 Package.on_use(function (api, where) {
@@ -15,5 +15,5 @@ Package.on_use(function (api, where) {
 });
 
 Package.on_test(function (api) {
-  api.use('egaragiste-notifications');
+  api.use('meteor-bootstrap-growl');
 });
