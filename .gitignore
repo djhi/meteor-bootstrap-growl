@@ -1,2 +1,4 @@
-.meteor/local
-.meteor/meteorite
+.build*
+.meteor*
+packages
+smart.lock

@@ -1,0 +1,11 @@
+{
+  "name": "egaragiste-notifications",
+  "description": "Provides growl notifications through a NotificationHelper utility class on client",
+  "homepage": "",
+  "author": "Gildas Garcia <gildas.garcia@gmail.com>",
+  "version": "0.0.1",
+  "git": "https://github.com/djhi/meteor-bootstrap-growl.git",
+  "packages": {
+    "bootstrap-growl": {}  	
+  }
+}
