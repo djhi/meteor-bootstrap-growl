@@ -17,14 +17,12 @@ var defaults = {
 NotificationsHelper = {
   error: function(error, options) {
     var message = error;
-    if (typeof error.invalidKeys === 'undefined') {
-      if (error.reason) {
-        message = error.reason;
-      } else {
-        message = error.message;
-      }
+    if (typeof error.reason) {
+      message = error.reason;
+    } else if (error.message) {
+      message = error.message;
     } else {
-      message = "Veuillez corriger les erreurs signalées en rouge";
+      message = error;
     }
 
     var opts = _.extend({}, defaults, {
