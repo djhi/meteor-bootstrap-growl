@@ -17,12 +17,17 @@ var defaults = {
 NotificationsHelper = {
   error: function(error, options) {
     var message = error;
-    if (typeof error.reason) {
-      message = error.reason;
-    } else if (error.message) {
-      message = error.message;
+    
+    if (error) {
+      if (error.reason) {
+        message = error.reason;
+      } else if (error.message) {
+        message = error.message;
+      } else {
+        message = error;
+      }
     } else {
-      message = error;
+      message = "Une erreur est survenue"
     }
 
     var opts = _.extend({}, defaults, {
